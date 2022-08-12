@@ -1,11 +1,22 @@
 # 搭建环境
 
+```shell
+# 若没有docker环境，只想拉取镜，可以用docker_pull.py代替docker pull
+# 要求本地存在socks代理, 端口与docker_pull.py脚本中一致（脚本中是7890，也可以修改）
+# 例如 拉取mysql/mysql-server镜像
+python docker_pull.py mysql/mysql-server
+```
+
 ##  oracle数据库环境搭建
 
 1 拉取镜像（https://hub.docker.com/r/oracleinanutshell/oracle-xe-11g）
 
 ```shell
 docker pull oracleinanutshell/oracle-xe-11g
+
+# 没有docker环境可以用这个脚本代替
+
+python docker_pull.py oracleinanutshell/oracle-xe-11g
 ```
 
 2 启动容器(允许远程登陆）

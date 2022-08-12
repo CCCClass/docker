@@ -1,7 +1,7 @@
 # 搭建环境
 
 ```shell
-# 若没有docker环境，只想拉取镜，可以用docker_pull.py代替docker pull
+# 若没有docker环境，只想拉取镜像，可以用docker_pull.py代替docker pull
 # 要求本地存在socks代理, 端口与docker_pull.py脚本中一致（脚本中是7890，也可以修改）
 # 例如 拉取mysql/mysql-server镜像
 python docker_pull.py mysql/mysql-server
